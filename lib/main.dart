@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:novely/screens/splash.dart';
-import 'package:novely/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,12 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: AppTheme().light,
-      darkTheme: AppTheme().dark,
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-      home:Scaffold(
-        
-      )
+      home:const Splash()
     );
   }
 }
