@@ -11,6 +11,6 @@ workflows:
         environment:
           flutter: stable
 
-          ios_signing:
-            distribution_type: app_store # or: ad_hoc | development | enterprise
-            bundle_identifier: com.example.novely
+          # ios_signing:
+          #   distribution_type: app_store # or: ad_hoc | development | enterprise
+          #   bundle_identifier: com.example.novely
